@@ -33,7 +33,6 @@ class Wagon{
     }
 
     join(passenger){
-        // console.log(this.getAvailableSeatCount())
         if(this.getAvailableSeatCount() > 0){
             this.travelersList.push(passenger)
         } else{
@@ -49,15 +48,9 @@ class Wagon{
             }
         }
         return result
-        // if(this.travelersList.isHealthy === false){
-        //     return true
-        // } else{
-        //     return false
-        // }
     }
 
     totalFood(){
-        // console.log(this.travelersList[0].food)
         let result = 0
         for(let i = 0; i < this.travelersList.length; i++){
             if(this.travelersList[i].food){
